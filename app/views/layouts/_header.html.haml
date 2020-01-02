@@ -1,11 +1,14 @@
-.content_legth menu
-.contant_rigth
-  %ul
-    %li.menu 
-      =link_to "HOME"
-    %li.menu 
-      =link_to "ABOUT"
-    %li.menu 
-      =link_to "SKILL"
-    %li.menu 
-      =link_to "CONTACT"
+.content
+  .content_legth 
+    %span Portofolio
+  .contant_rigth
+    %ul
+      %li.menu 
+        =link_to "HOME" , home_index_path
+        -# = link_to "ログイン", new_user_session_path, method: :get, class: "user_sign_in"
+      %li.menu 
+        =link_to "ABOUT", about_path
+      %li.menu 
+        =link_to "SKILL",skill_path
+      %li.menu 
+        =link_to "CONTACT" ,contact_path 

@@ -1,0 +1,61 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+  margin: 0;
+  padding: 0;
+}
+.content{
+  margin:0;
+  padding: 0;
+  background-color: #1455a791;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  // display: inline-block;
+}
+
+.content_legth{
+  width: 50%;
+  font-size: 32px;
+  span {
+    display: block;
+    margin: 10px auto;
+    padding-left: 75px;
+    // text-align:center
+  }
+} 
+
+.contant_rigth{
+  // display: inline-block;
+  width: 49%;
+  
+  // height: 100%;
+  line-height: 30px;
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    li.menu{
+      margin: 10px;
+      // width: 70px;
+      display: inline-block;
+      a{
+        text-decoration: none;
+        color: #070415c7;;
+        // font-weight: bold;
+        padding: 0 10px;
+        line-height: 30px;
+      };
+    }
+    li.menu:hover {
+      opacity: 0.5;
+      // color: #fff;
+      a{
+        // text-decoration: none;
+        color: #fff;
+      };
+    }
+  }
+
+}
