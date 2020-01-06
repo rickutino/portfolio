@@ -2,14 +2,16 @@
   .content_legth
     .fas.fa-bars
     %span Portfolio
-  .contant_rigth
+  %nav.contant_rigth
     %ul
-      %li.menu 
-        =link_to "HOME" , "#home"
+      %li.menu
+        =link_to "HOME" , "#home",{"data-page" => "home"}
         -# = link_to "ログイン", new_user_session_path, method: :get, class: "user_sign_in"
-      %li.menu 
-        =link_to "ABOUT", "#container"
-      %li.menu 
-        =link_to "SKILL","#works"
-      %li.menu 
-        =link_to "CONTACT" ,"#contact"
+      %li.menu
+        =link_to "ABOUT", "#container",{"data-page" => "container"}
+      %li.menu
+        =link_to "SKILL","#works",{"data-page" => "works"}
+      %li.menu
+        =link_to "CONTACT" ,"#contact",{"data-page" => "contact"}
+      .bubble
+

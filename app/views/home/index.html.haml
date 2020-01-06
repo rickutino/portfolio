@@ -1,9 +1,9 @@
-%section#home.home
+%section#home.home{"data-index" => "0"}
   .head
     %h1 I am Ricardo
     %p I like to design and code
     =link_to "Read More...", "#container"
-%section#container.container
+%section#container.container{"data-index" => "1"}
   .about
     %h2.heading PROFILE
     %p.about-text
@@ -16,7 +16,7 @@
       WEB制作において、最初のご相談から納品まで致します,
       ご利用の流れの第一歩は無料相談からはじまります,
       新規ホームページ制作、リニューアルをご検討の方も、まずは一度ご相談ください。
-%section#works.works
+%section#works.works{"data-index" => "2"}
   %h2.heading MY WORKS
   .works-wrapper
     .work-box
@@ -37,7 +37,7 @@
         Profy
         %br/
         %a.button.button-ghost{:href => "#"} READ MORE
-%section#contact.contact
+%section#contact.contact{"data-index" => "3"}
   %form.contact-form
     %input{:name => "name", :placeholder => "NAME", :type => "text"}/
     %input{:name => "email", :placeholder => "EMAIL", :type => "text"}/

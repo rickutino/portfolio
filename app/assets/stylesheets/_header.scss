@@ -34,9 +34,9 @@ span{
   // display: block;
   margin: 10px auto;
   padding-left: 75px;
-
+  
   display: flex;
-    // text-align:center
+  // text-align:center
   
 } 
 
@@ -72,6 +72,18 @@ span{
     }
   }
 }
+
+.bubble{
+  position: absolute;
+  z-index: -2; 
+  color: whitesmoke;
+  // background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+  background-color: #1455a791;
+  opacity: 0.9;
+  transform: scale(1.2);
+  transition: ease 0.5s;
+}
+
 @media (min-width: 600px) {
   span {
     display: block;
