@@ -1,8 +1,39 @@
-.body{
-  background-image: url(../images/img.jpg) ;
-  background-size: auto;
-  // background-size:  cover; 
-  // opacity: 1;
-  // background-color: red;
-  // background: url(images/bg.jpg) fixed;
+section{
+  height: 100vh;
+}
+section.home{
+  display: flex;
+  background-image:  url(img.jpg);
+  background-size:  cover; 
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.8px;
+  font-size: 2rem;
+  line-height: 1.2;
+  .head{
+    color: #618ec5;
+    -webkit-text-stroke: .5px #313135;
+    // mask-image: url(mask.png);
+    // -webkit-mask-image: url(mask.png);
+    // mask-size: 120px; 
+    // -webkit-mask-size: 120px; /* 横幅50px、高さはauto */
+    a{
+      margin-top: 10px;
+      font-size: .761904em;
+      font-style: italic;
+      font-weight: 500;
+      color: #6a92c3;
+      display: inline-block;
+      -ms-transition: all 0s ease;
+      -webkit-transition: all 0s ease;
+      -moz-transition: all 0s ease;
+      -o-transition: all 0s ease;
+      transition: all 0s ease;
+      text-decoration: none;
+      border: 1px solid #99a7af;
+      padding: 5px 20px 6px;
+      line-height: 1em;
+    }
+  }
 }

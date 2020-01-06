@@ -1,14 +1,15 @@
 .content
-  .content_legth 
-    %span Portofolio
+  .content_legth
+    .fas.fa-bars
+    %span Portfolio
   .contant_rigth
     %ul
       %li.menu 
-        =link_to "HOME" , home_index_path
+        =link_to "HOME" , "#home"
         -# = link_to "ログイン", new_user_session_path, method: :get, class: "user_sign_in"
       %li.menu 
-        =link_to "ABOUT", about_path
+        =link_to "ABOUT", "#container"
       %li.menu 
-        =link_to "SKILL",skill_path
+        =link_to "SKILL","#works"
       %li.menu 
-        =link_to "CONTACT" ,contact_path 
+        =link_to "CONTACT" ,"#contact"
