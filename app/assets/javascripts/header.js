@@ -26,6 +26,7 @@ $(document).on("turbolinks:load", ()=>{
         bubble.style.setProperty('top',`${directions.top}px`);
         bubble.style.setProperty('width',`${directions.width}px`);
         bubble.style.setProperty('height',`${directions.height}px`);
+        // bubble.style.background = gradient[gradientIndex];
       }
     }); 
   } 
