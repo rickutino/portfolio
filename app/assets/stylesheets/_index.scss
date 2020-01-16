@@ -3,7 +3,8 @@ section{
 }
 section.home{
   display: flex;
-  background-image:  url(img.jpg);
+  background: url(img.jpg) fixed;
+  // background: url('images/bg.jpg') fixed;
   background-size:  cover; 
   text-align:center;
   align-items: center;
