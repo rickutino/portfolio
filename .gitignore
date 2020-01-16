@@ -26,8 +26,8 @@
 
 /public/assets
 .byebug_history
+config/environments/*
 /app/mailers/inquiry_mailer.rb
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-/config/environments/development.rb
