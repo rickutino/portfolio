@@ -38,7 +38,7 @@
         %br
         %a.button.button-ghost{:href => "#"} READ MORE
 %section#contact.contact{"data-index" => "3"}
-  = form_for(@inquiry,class: "contact-form", url: {controller: 'home', action: 'new' }) do |f|
+  = form_for(@inquiry,class: "contact-form", url: {controller: 'home', action: 'create' }) do |f|
     = f.text_field :name, placeholder: "NAME"
     = f.email_field :emails, placeholder: "EMAIL"
     = f.text_field :title, placeholder: "TITLE"
