@@ -24,7 +24,7 @@
       .work-description
         Pictweet
         %br/
-        %a.button.button-ghost{:href => "#"} READ MORE
+        %a.button.button-ghost{:href => "#"} READ MORE 
     .work-box
       %img.work-image{:alt => "制作事例", :src => "images/mooovi.jpg"}/
       .work-description
@@ -38,17 +38,10 @@
         %br
         %a.button.button-ghost{:href => "#"} READ MORE
 %section#contact.contact{"data-index" => "3"}
-  = form_for(@inquiry,class: "contact-form", url: {controller: 'home', action: 'create' }) do |f|
-    = f.text_field :name, placeholder: "NAME"
+  = form_for(@inquiry , html: {class: 'col-sm-10', id: 'hoge'}, url: {controller: 'home', action: 'create' }) do |f|
+    = f.text_field :name,class: "for" , placeholder: "NAME"
     = f.email_field :emails, placeholder: "EMAIL"
     = f.text_field :title, placeholder: "TITLE"
     = f.text_area :message, placeholder: "MESSAGE"
-    = f.button "SEND"
-    -# = f.submit, value: "SEND"
-    -# %form.contact-form
-      -# %input{:name => "name", :placeholder => "NAME", :type => "text"}/
-      -# %input{:name => "email", :placeholder => "EMAIL", :type => "text"}/
-      -# %input{:name => "title", :placeholder => "TITLE", :type => "text"}/
-      -# %textarea{:name => "message", :placeholder => "MESSAGE"}
-      -# %input{:type => "submit", :value => "SEND"}
+    = f.button "SEND" ,class:"btn"
 
