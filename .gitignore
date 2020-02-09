@@ -23,9 +23,12 @@
 
 /node_modules
 /yarn-error.log
+#environments
+bin/config/environments
 
 /public/assets
 .byebug_history
+/app/mailers/inquiry_mailer.rb
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key

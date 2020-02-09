@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <%= @inquiry.name %> 様 から問い合わせがありました。
+      email:<%= @inquiry.emails %>
+      ・お問い合わせ内容
+      <%= @inquiry.title %>
+      -----------------------------------------------
+      <%= @inquiry.message %>
+  </body>
+</html>
