@@ -1,3 +1,50 @@
+-# %section#home.home{"data-index" => "0"}
+-#   .head
+-#     %h1 I am Ricardo
+-#     %p I like to design and code
+-#     =link_to "Read More...", "#container"
+-# %section#container.container{"data-index" => "1"}
+-#   .about
+-#     %h2.heading PROFILE
+-#     %p.about-text
+-#       子どもの頃からモノづくりが好きで、いまはウェブアプリをつくることにハマっています。
+-#       今までの仕事と比べるのは難しいですが、書いたコードをすぐに結果が反映されるので
+-#       進んでいく感じがパズルを解いていくような感じがして楽しいですね。
+-#       逆に進まないときはとてもつらいですが。笑
+-#     %h2.heading SERVICE
+-#     %p.about-text
+-#       WEB制作において、最初のご相談から納品まで致します,
+-#       ご利用の流れの第一歩は無料相談からはじまります,
+-#       新規ホームページ制作、リニューアルをご検討の方も、まずは一度ご相談ください。
+-# %section#works.works{"data-index" => "2"}
+-#   %h2.heading MY WORKS
+-#   .works-wrapper
+-#     .work-box
+-#       %img.work-image{:alt => "制作事例", :src => "images/pictweet.jpg"}/
+-#       .work-description
+-#         Pictweet
+-#         %br/
+-#         %a.button.button-ghost{:href => "#"} READ MORE 
+-#     .work-box
+-#       %img.work-image{:alt => "制作事例", :src => "images/mooovi.jpg"}/
+-#       .work-description
+-#         Mooovi
+-#         %br/
+-#         %a.button.button-ghost{:href => "#"} READ MORE
+-#     .work-box
+-#       %img.work-image{:alt => "制作事例", :src => "images/profy.jpg"}/
+-#       .work-description
+-#         Profy
+-#         %br
+-#         %a.button.button-ghost{:href => "#"} READ MORE
+-# %section#contact.contact{"data-index" => "3"}
+-#   = form_for(@inquiry , html: {class: 'col-sm-10', id: 'hoge'}, url: {controller: 'home', action: 'create' }) do |f|
+-#     = f.text_field :name,class: "for" , placeholder: "NAME"
+-#     = f.email_field :emails, placeholder: "EMAIL"
+-#     = f.text_field :title, placeholder: "TITLE"
+-#     = f.text_area :message, placeholder: "MESSAGE"
+-#     = f.button "SEND" ,class:"btn"
+
 %section#home.home{"data-index" => "0"}
   .head
     %h1 I am Ricardo
@@ -11,37 +58,50 @@
       今までの仕事と比べるのは難しいですが、書いたコードをすぐに結果が反映されるので
       進んでいく感じがパズルを解いていくような感じがして楽しいですね。
       逆に進まないときはとてもつらいですが。笑
-    %h2.heading SERVICE
-    %p.about-text
-      WEB制作において、最初のご相談から納品まで致します,
-      ご利用の流れの第一歩は無料相談からはじまります,
-      新規ホームページ制作、リニューアルをご検討の方も、まずは一度ご相談ください。
+    -# %h2.heading SERVICE
+    -# %p.about-text
+    -#   WEB制作において、最初のご相談から納品まで致します,
+    -#   ご利用の流れの第一歩は無料相談からはじまります,
+    -#   新規ホームページ制作、リニューアルをご検討の方も、まずは一度ご相談ください。
 %section#works.works{"data-index" => "2"}
-  %h2.heading MY WORKS
-  .works-wrapper
-    .work-box
-      %img.work-image{:alt => "制作事例", :src => "images/pictweet.jpg"}/
-      .work-description
-        Pictweet
-        %br/
-        %a.button.button-ghost{:href => "#"} READ MORE 
-    .work-box
-      %img.work-image{:alt => "制作事例", :src => "images/mooovi.jpg"}/
-      .work-description
-        Mooovi
-        %br/
-        %a.button.button-ghost{:href => "#"} READ MORE
-    .work-box
-      %img.work-image{:alt => "制作事例", :src => "images/profy.jpg"}/
-      .work-description
-        Profy
-        %br
-        %a.button.button-ghost{:href => "#"} READ MORE
+  -# %h1.heading MY WORKS
+  .container2
+    .card
+      .face.face1
+        .contents
+          =image_tag "pictweet.png",height: "150" , alt: "sns サイト"
+          %h3 pictweet
+      .face.face2
+        .contents
+          %p  CRUDを活かした、投稿サイトです。
+          -# =link_to "Read More...", ""
+    .card
+      .face.face1
+        .contents
+          =image_tag "chat_space.png",height: "150", alt: "同期通信　サイト"
+          %h3 chat_space
+      .face.face2
+        .contents
+          %p Ajaxを用いた非同期通信チャットアプリケーションで、１対１のチャットはもちろん、複数人でのグループチャットも可能です。また、画像の送信も可能です。
+          -# =link_to "Read More...", ""
+    .card
+      .face.face1
+        .contents
+          =image_tag "mercari.png",height: "150", alt: "EC　サイト"
+          %h3 メルカリ（クローンサイト）
+      .face.face2
+        .contents
+          %p  スクールのアジャイル開発でメルカリのクローンサイトをチームで開発しました。 ユーザーログイン ・出品、購入 を行うことができます。
+          -# =link_to "Read More...", ""
 %section#contact.contact{"data-index" => "3"}
-  = form_for(@inquiry , html: {class: 'col-sm-10', id: 'hoge'}, url: {controller: 'home', action: 'create' }) do |f|
-    = f.text_field :name,class: "for" , placeholder: "NAME"
-    = f.email_field :emails, placeholder: "EMAIL"
-    = f.text_field :title, placeholder: "TITLE"
-    = f.text_area :message, placeholder: "MESSAGE"
-    = f.button "SEND" ,class:"btn"
+  .stables 
+    %h1 お問い合わせ<br>
+    %p 現在WEB制作の案件募集中です。<br>
+    %p お気軽にお問い合わせください。
+  = form_for(@inquiry,html:{class: "contact-form"}, url: {controller: 'home', action: 'new' }) do |f|
+    = f.text_field :name,class:"name", placeholder: "お名前"
+    = f.email_field :emails,class:"email", placeholder: "メール"
+    = f.text_field :title,class:"title", placeholder: "内容"
+    = f.text_area :message,class:"message", placeholder: "メッセージ"
+    = f.button "SEND",class:"btn"
 
