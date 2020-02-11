@@ -51,10 +51,10 @@
     %h1 お問い合わせ<br>
     %p 現在WEB制作の案件募集中です。<br>
     %p お気軽にお問い合わせください。
-  = form_for(@inquiry,html:{class: "contact-form"}, url: {controller: 'home', action: 'new' }) do |f|
-    = f.text_field :name,class:"name", placeholder: "お名前"
-    = f.email_field :emails,class:"email", placeholder: "メール"
-    = f.text_field :title,class:"title", placeholder: "内容"
-    = f.text_area :message,class:"message", placeholder: "メッセージ"
-    = f.button "SEND",class:"btn"
+  = form_for(@inquiry,html:{class: "contact-form"}, url: {controller: 'home', action: 'create' }) do |f|
+    = f.text_field :name,class:"name",id:"name", placeholder: "お名前"
+    = f.email_field :emails,class:"email",id:"email", placeholder: "メール"
+    = f.text_field :title,class:"title",id:"title", placeholder: "内容"
+    = f.text_area :message,class:"message",id:"message", placeholder: "メッセージ"
+    = f.button "SEND",class:"btn",id:"btn"
 
