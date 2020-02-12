@@ -16,7 +16,7 @@ section.contact {
   letter-spacing: 2px;
   line-height: 1.7;
   margin: 0 auto;
-  color: #888;
+  color: rgb(163, 162, 162);
   vertical-align: baseline;
   // word-wrap: break-word;
   h1{
@@ -41,7 +41,7 @@ section.contact {
   border:none;
   outline: none;
   border-bottom: 1px solid;
-  color: #888;
+  color: rgba(255, 255, 255, 0.8);
   padding: 10px 6px;
   font-size: 14px;
   margin-bottom: 40px;
@@ -78,7 +78,7 @@ section.contact {
   // outline: none;
   // border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 0;
-  color: #888;
+  color: rgba(255, 255, 255, 0.8);
   }
   
   .contact textarea {
@@ -93,7 +93,7 @@ section.contact {
   // border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   background-color: transparent;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
   }
   

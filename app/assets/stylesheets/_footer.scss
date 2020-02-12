@@ -1,5 +1,5 @@
 .footer{
-  background-color: #323235;
+  background-color: #1b262c;
 }
 .social_buttons{
   height: 150px;
@@ -21,7 +21,7 @@
       position: absolute;
       width: 60px;
       height: 60px;
-      background: linear-gradient(45deg,#22a6b3,#30336b);
+      background: linear-gradient(45deg,#3282b8,#0f4c75);
       border-radius: 50%;
       z-index: 1;
       transition: 0.3s ease-in;
@@ -34,7 +34,7 @@
       z-index: 2;
     }
     &:hover i{
-      background: linear-gradient(45deg,#22a6b3,#30336b);
+      background: linear-gradient(45deg,#3282b8,#0f4c75);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transform: scale(2.2);

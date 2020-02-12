@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_16_123002) do
+ActiveRecord::Schema.define(version: 2020_02_11_142136) do
 
   create_table "inquiries", force: :cascade do |t|
-    t.string "name"
-    t.string "emails"
-    t.string "title"
-    t.string "message"
+    t.string "name", null: false
+    t.string "emails", null: false
+    t.string "title", null: false
+    t.text "message", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
