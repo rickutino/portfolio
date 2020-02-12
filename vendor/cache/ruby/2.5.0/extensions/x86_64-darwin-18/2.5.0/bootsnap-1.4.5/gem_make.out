@@ -1,0 +1,15 @@
+current directory: /Users/prog_utino/projects/portfolio/vendor/cache/ruby/2.5.0/gems/bootsnap-1.4.5/ext/bootsnap
+/Users/prog_utino/.rvm/rubies/ruby-2.5.1/bin/ruby -I /Users/prog_utino/.rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200212-5017-18684ft.rb extconf.rb
+creating Makefile
+
+current directory: /Users/prog_utino/projects/portfolio/vendor/cache/ruby/2.5.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/prog_utino/projects/portfolio/vendor/cache/ruby/2.5.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/prog_utino/projects/portfolio/vendor/cache/ruby/2.5.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20200212-5017-1780w8q/bootsnap
