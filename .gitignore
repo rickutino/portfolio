@@ -32,3 +32,6 @@ bin/config/environments
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+/vendor/cache
+/.env
