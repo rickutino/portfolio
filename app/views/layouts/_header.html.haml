@@ -1,17 +1,17 @@
-.content
-  .content_legth
-    .fas.fa-bars
-    %span Portfolio
-  %nav.contant_rigth
+.navbar
+  .logo
+    .btn_menu.fas.fa-bars{id:"btnMenu"}
+    %h5 Portfolio
+  %nav.menu{id:"menu"}
     %ul
-      %li.menu
+      %li
         =link_to "HOME" , "#home",{"data-page" => "home"}
         -# = link_to "ログイン", new_user_session_path, method: :get, class: "user_sign_in"
-      %li.menu
+      %li
         =link_to "ABOUT", "#container",{"data-page" => "container"}
-      %li.menu
+      %li
         =link_to "SERVICE","#works",{"data-page" => "works"}
-      %li.menu
+      %li
         =link_to "CONTACT" ,"#contact",{"data-page" => "contact"}
       .bubble
 
