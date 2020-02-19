@@ -69,3 +69,12 @@ gem 'erb2haml'
 gem "font-awesome-rails"
 
 gem 'dotenv-rails'
+
+group :development, :test do
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
+  gem 'capistrano-rails-console' #bundle exec cap production rails:console
+end
