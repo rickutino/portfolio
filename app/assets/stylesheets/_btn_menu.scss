@@ -1,0 +1,41 @@
+@media only screen and (max-width :600px){
+  .navbar{
+    overflow: visible;
+    box-shadow: none;
+    height: 55px;
+  }
+  .menu{
+    width: 100%;
+    right: 0;
+    top  : 90px;
+    background-color: #1455a791;
+    overflow: hidden;
+    box-shadow: 0px 3px 5px #2c3e50;
+    max-height: 0;
+    ul{
+      display: block;
+      li{
+        display: block;
+
+      }
+    }
+  }
+  .menu a{
+    display:block;
+    text-align: center;
+    padding: 10px ;
+    margin: 0;
+  }
+  .btn_menu.fas.fa-bars{
+    display:block;
+    cursor: pointer;
+    margin-top: 9px;
+  }
+  .bubble{
+    display: none;
+  }
+  .show{
+
+    max-height: 500px;
+  }
+}
