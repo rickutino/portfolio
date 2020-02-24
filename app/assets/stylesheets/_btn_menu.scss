@@ -3,6 +3,7 @@
     overflow: visible;
     box-shadow: none;
     height: 55px;
+    width: 100vw;
   }
   .menu{
     width: 100%;
@@ -37,5 +38,14 @@
   .show{
 
     max-height: 500px;
+  }
+  .contact-form{
+    width: 70vw;
+  }
+  .about{
+    width: calc(100% / 1.2);
+    &-text{
+      width: 100%;
+    }
   }
 }
