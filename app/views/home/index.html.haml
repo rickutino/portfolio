@@ -21,31 +21,31 @@
   .container2
     .card
       .face.face1
-        .contents
+        %figure.contents
           =image_tag "pictweet.png",height: "150" , alt: "sns サイト"
-          %h3 pictweet
+          %figcaption
+            %h3 pictweet
       .face.face2
         .contents
           %p  CRUDを活かした、投稿サイトです。
-          -# =link_to "Read More...", ""
     .card
       .face.face1
-        .contents
+        %figure.contents
           =image_tag "chat_space.png",height: "150", alt: "同期通信　サイト"
-          %h3 chat_space
+          %figcaption
+            %h3 chat_space
       .face.face2
         .contents
           %p Ajaxを用いた非同期通信チャットアプリケーションで、１対１のチャットはもちろん、複数人でのグループチャットも可能です。また、画像の送信も可能です。
-          -# =link_to "Read More...", ""
     .card
       .face.face1
-        .contents
+        %figure.contents
           =image_tag "mercari.png",height: "150", alt: "EC　サイト"
-          %h3 メルカリ(クローンサイト)
+          %figcaption
+            %h3 メルカリ(クローンサイト)
       .face.face2
         .contents
           %p  スクールのアジャイル開発でメルカリのクローンサイトをチームで開発しました。 ユーザーログイン ・出品、購入 を行うことができます。
-          -# =link_to "Read More...", ""
 %section#contact.contact{"data-index" => "3"}
   .stables 
     %h1 お問い合わせ<br>
@@ -57,4 +57,3 @@
     = f.text_field :title,class:"title",id:"title", placeholder: "内容"
     = f.text_area :message,class:"message",id:"message", placeholder: "メッセージ"
     = f.button "SEND",class:"btn",id:"btn"
-
