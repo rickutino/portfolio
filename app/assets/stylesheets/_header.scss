@@ -8,7 +8,6 @@
   text-decoration: none;
 }
 .btn_menu.fas.fa-bars{
-  // margin: 0 10px 0 -20px;
   display:none;
   position: absolute;
   right: 20px;
@@ -16,44 +15,31 @@
 .btn_menu.fas.fa-bars:hover{
   color: #fff;
 }
-h5{
-  font-family: 'Changa', sans-serif;
-}
 
 .navbar{
-  margin:0;
-  padding: 0;
   background-color: #1455a791;
   box-shadow: 0px 3px 5px #2c3e50;
   height: 55px;
   position:fixed;
   top: 0;
   width: 100%;
-  // display: flex;
-  // flex-direction: row;
   z-index: 2;
-  overflow: hidden;
-  // display: inline-block;
+  // overflow: hidden;
 }
 
 .logo{
-  // width: 50%;
   font-size: 32px;
-  // display: block;
   margin: 3px auto;
   padding-left: 75px;
   color: #b9c6ce;
   display: flex;
   float: left;
-  // text-align:center
-  
+  h5{
+    font-family: 'Changa', sans-serif;
+  }
 } 
 
 .menu{
-  // display: inline-block;
-  // width: 49%;
-  
-  // height: 100%;
   line-height: 30px;
   float: right;
   padding-right: 30px;
@@ -63,22 +49,18 @@ h5{
     display: flex;
     li{
       margin: 10px;
-      // width: 70px;
       display: inline-block;
       a{
         text-decoration: none;
         color: #b9c6ce;
-        // font-weight: bold;
         font-family: 'Changa', sans-serif;
         padding: 0 10px;
         line-height: 30px;
       };
     }
     li:hover {
-      // opacity: 0.5;
       color: #fff;
       a{
-        // text-decoration: none;
         color: #fff;
       };
     }
@@ -89,7 +71,6 @@ h5{
   position: absolute;
   z-index: -2; 
   color: whitesmoke;
-  // background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
   background-color: #3282b8;
   border-radius: 4px;
   opacity: 0.9;
