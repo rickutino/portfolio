@@ -1,7 +1,6 @@
 section.contact {
   background: linear-gradient(#1c2948ba, #313840);
   padding: 80px 0 150px;
-  overflow: scroll;
 }
 
 .stables {
@@ -59,9 +58,12 @@ section.contact {
   max-width: 100%;
 }
 
-@media screen and (max-width:600px){
+@media only screen and (max-width:825px){
   .name,.email{
     width: 100%;
+  }
+  .contact{
+    height: 42em;
   }
 }
   .contact input[type=text], .contact textarea {
