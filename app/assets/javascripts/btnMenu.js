@@ -1,7 +1,7 @@
 // window.onload= function () {
   $(document).on('turbolinks:load', function() { 
-  let btn = document.getElementById("btnMenu");
-  let menu = document.getElementById("menu");
+  let btn = document.querySelector("#btnMenu");
+  let menu = document.querySelector("#menu");
 
 
   btn.addEventListener('click', classIf);
