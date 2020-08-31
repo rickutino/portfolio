@@ -17,7 +17,6 @@
       display: block;
       li{
         display: block;
-
       }
     }
   }
@@ -27,16 +26,15 @@
     padding: 10px ;
     margin: 0;
   }
-  .btn_menu.fas.fa-bars{
+  .btn_menu.fas{
     display:block;
     cursor: pointer;
-    margin-top: 9px;
+    padding: 10px;
   }
   .bubble{
     display: none;
   }
   .show{
-
     max-height: 500px;
   }
   .contact-form{
